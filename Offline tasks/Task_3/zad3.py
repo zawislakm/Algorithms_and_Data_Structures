@@ -12,8 +12,8 @@ same words now are next to each other. They are counted in linear way in buckets
 def counting_sort(A: List[str], index: int) -> None:
     n = len(A)
     k = 26
-    C = [0] * k
-    B = [None] * n
+    C = [0 for _ in range(k)]
+    B = [None for _ in range(n)]
 
     for i in range(n):
         C[ord(A[i][index]) - 97] += 1
