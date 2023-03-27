@@ -18,13 +18,16 @@ def insertion_sort(A: List[int]) -> List[int]:
 
 
 def bucketsort(A: List[int]) -> None:
-    n = len(A) + 1
-    min_x = min(A)
-    max_x = max(A)
-    buckets = [[] for _ in range(n)]
+    n = len(A)
+    min_e = min(A)
+    max_e = max(A)
+    if min_e == max_e:
+        return
+
+    buckets = [[] for _ in range(n + 1)]
 
     for x in A:
-        num_bucket = int((x - min_x) / (max_x - min_x))
+        num_bucket = int((x - min_e) / (max_e - min_e) * n)
         buckets[num_bucket].append(x)
 
     for bucket in buckets:
