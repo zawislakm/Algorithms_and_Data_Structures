@@ -1,16 +1,14 @@
 from kol1testy import runtests
 
 """
-Maksymilian Zawiślak, 410609
-Algorytm idzie po zadanej petli i wyznacza przedzialy dlugosci p (tablica tmp) potem dla właśnie tej tabeli odplany
-jest quickselect, który zwaraca wartość k-ty elementu z przedziału czego oczekujemy w zadaniu. Wyniki są sumowane.
-
-O(np) czasowa
-O(p) pamieci dodatkowej
+Algorithm creates array slice of p length, then picks k element from given slice using quickselect
+O(np) 
 """
 
 
-def quickselect(A: list, k: int, p: int, r: int) -> int:
+def quickselect(A: list, k: int, p: int = 0, r: int = None) -> int:
+    if r is None:
+        r = len(A) - 1
     if p == r:
         return A[p]
     if p < r:
@@ -34,17 +32,15 @@ def partition(A: list, p: int, r: int) -> int:
     return i + 1
 
 
-def ksum(T, k, p):
+def ksum(T: list, k: int, p: int) -> int:
     n = len(T)
-    sum = 0
+    ans = 0
 
     for i in range(n - p + 1):
-        tmp = T[i:i + p]
-        sum += quickselect(tmp, k - 1, 0, len(tmp) - 1)
-    return sum
-
-
+        arr_slice = T[i:i + p]
+        ans += quickselect(arr_slice, k - 1)
+    return ans
 
 
 # zmien all_tests na True zeby uruchomic wszystkie testy
-runtests(ksum, all_tests=True)
+runtests(ksum, all_tests=False)
