@@ -7,6 +7,7 @@ The repository contains solutions from Algorithms and Data Structures
 ## Content
 
 1. [Sorting](https://github.com/zawislakm/Algorithms_and_Data_Structures_AGH_UST/tree/master/Sort)
+2. [Graphs](https://github.com/zawislakm/Algorithms_and_Data_Structures_AGH_UST/tree/master/Graph)
 2. [Exercises](https://github.com/zawislakm/Algorithms_and_Data_Structures_AGH_UST/tree/master/Exercices)
 3. [Offline tasks](https://github.com/zawislakm/Algorithms_and_Data_Structures_AGH_UST/tree/master/Offline_tasks)
 4. [Exams](https://github.com/zawislakm/Algorithms_and_Data_Structures_AGH_UST/tree/master/Exams)
