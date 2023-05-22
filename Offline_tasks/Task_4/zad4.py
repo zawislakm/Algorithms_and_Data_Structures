@@ -2,9 +2,8 @@ from zad4testy import runtests
 import queue
 
 """
-410609, Maksymilian Zawislak
-Pierwszy BFS wyznacza najkrótsza trase, następnie trasa jest odtwarzana, kolejno odpala sie znowu BFSa za kazdym
-razem bez innej krawędzi z odtworzonej trasy
+First BFS finds the shortes path, next each edges is deleted from graph and BFS again looks for new shortes path 
+(hopefully longer)
 """
 
 
