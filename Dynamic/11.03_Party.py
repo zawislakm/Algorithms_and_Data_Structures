@@ -29,7 +29,7 @@ def g(v: Employee) -> int:
 
     return v.g
 
-
+# Party Tree
 a50 = Employee(50)
 b10 = Employee(10)
 b20 = Employee(20)
