@@ -1,4 +1,4 @@
-from zad8testy import runtests
+from zad2testy import runtests
 
 from math import ceil, sqrt
 
@@ -67,10 +67,6 @@ def highway(A):
         del G[0]
 
     return ans
+        
 
-
-# zmien all_tests na True zeby uruchomic wszystkie testy
-runtests(highway, all_tests=True)
-
-# A = [(10, 10), (15, 25), (20, 20), (30, 40)]
-# print(highway(A))
+runtests( highway ) 
