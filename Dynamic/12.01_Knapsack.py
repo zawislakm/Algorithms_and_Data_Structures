@@ -1,4 +1,6 @@
 # W - weight, P - price, B - max weight
+# discrete version
+# dynamic
 def knapsack(W: list, P: list, B: int) -> int:
     n = len(W)
     F = [[0 for _ in range(B + 1)] for _ in range(n)]
