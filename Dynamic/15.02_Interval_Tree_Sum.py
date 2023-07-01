@@ -22,13 +22,6 @@ class IntervalTree:
 
 
 def build_tree(nums: list) -> (IntervalTree, list):
-    n = len(nums)
-    print(math.sqrt(n) + 1)
-    to_add = int(2 ** (math.sqrt(n) + 1) - n)
-    zeros = [0 for _ in range(to_add)]
-    nums += zeros
-    print(len(nums))
-    print(nums)
     leafs = []
     for i, value in enumerate(nums):
         tmp = IntervalTree(value, i, i)
@@ -41,6 +34,10 @@ def build_tree(nums: list) -> (IntervalTree, list):
 
         for i in range(0, len(level), 2):
             left_child = level[i]
+            if i + 1 >= len(level):
+                # skipping when odd elements
+                new_level.append(left_child)
+                break
             right_child = level[i + 1]
 
             tmp = IntervalTree(left_child.value + right_child.value, left_child.start, right_child.end, left_child,
@@ -78,8 +75,8 @@ def tree_sum(root: IntervalTree, i: int, j: int) -> int:
             count += node.value
             return
 
-        sum_up(node.left, i, min(node.left.end,j))
-        sum_up(node.right, max(node.right.start,i), j)
+        sum_up(node.left, i, min(node.left.end, j))
+        sum_up(node.right, max(node.right.start, i), j)
 
     sum_up(root, i, j)
     print(f'Found sum: {count}')
@@ -89,9 +86,7 @@ def tree_sum(root: IntervalTree, i: int, j: int) -> int:
 numbers = [0, 7, 5, 3, 1, 8, 6, 12, 3]
 tree_root, tree_leafs = build_tree(numbers)
 print(tree_root.value)
-tree_update(3,6,tree_leafs)
+tree_update(3, 6, tree_leafs)
 print(tree_root.value)
 
-tree_sum(tree_root,1,6)
-
-
+tree_sum(tree_root, 8, 8)

@@ -95,6 +95,7 @@ def solve_task(root: IntervalTree, given_intervals: list) -> None:
 def check_intervals_point(root: IntervalTree, value: int) -> int:
     print("Solution:")
     in_intervals = []
+
     def go_down(node: IntervalTree):
         nonlocal in_intervals
 
