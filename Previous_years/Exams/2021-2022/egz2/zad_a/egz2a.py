@@ -1,6 +1,8 @@
 from egz2atesty import runtests
 
-
+"""
+other solutions needs segments tree
+"""
 def acceptable_solution(A: list, T: int) -> int:
     n = len(A)
     M = [0 for _ in range(n)]

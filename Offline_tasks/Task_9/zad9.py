@@ -22,7 +22,7 @@ O(nlogn) solution means using 3 min heaps
 INF = 10 ** 10
 
 
-def min_cost(O, C, T, L):
+def min_cost(O: list, C: list, T: int, L: int) -> int:
     # O(n^2)
     P = [i for i in zip(O, C)]
     P.append((0, 0))
