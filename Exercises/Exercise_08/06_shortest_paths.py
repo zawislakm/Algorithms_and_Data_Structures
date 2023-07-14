@@ -3,8 +3,8 @@ Jak znaleźć najkrótsze ścieżki z wierzchołka s do wszystkich innych w acyk
 """
 
 """
-ustawic topologicznie wierzcholki, nastepnie startujac wiercholka s do konca ustawinie tologiczinego
-ustawiac najlepsze dystnse dostania sie 
+topology sort vertices, then starting from the vertex s to the end of the topology sort
+set the best access distances
 """
 
 

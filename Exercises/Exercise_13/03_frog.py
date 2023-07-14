@@ -4,14 +4,10 @@ The task is to minimize the frog's jumps. Jump t leafs ahead cost t^2 energy.
 """
 
 """
-F(i,a) - minmalna liczba skoków zeby dostac sie na ite pole oraz miec a kaolrii w zapasie
-
-z pola j na i to musi miec a + (i-j)^2 - P[j]  kalorii
-
-
+#doesnt work!
 """
 
-#doesnt work!
+
 INF = 100
 
 

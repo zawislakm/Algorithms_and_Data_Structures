@@ -16,15 +16,16 @@ O(Ln)
 
 """
 
+# try to return where car goes
 
 def ferry(A: list, L: int):
     n = len(A)
 
     DP = [[[-math.inf for _ in range(L + 1)] for _ in range(L + 1)] for _ in range(n)]
 
-    for i in range(L):
-        for j in range(L):
-            DP[0][i][j] = 0
+    # for i in range(L): # work with out it?
+    #     for j in range(L):
+    #         DP[0][i][j] = 0
 
     def solve(i: int, j: int, k: int):
         if DP[i][j][k] != -math.inf:

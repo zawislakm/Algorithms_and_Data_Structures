@@ -1,17 +1,17 @@
 """
-W tablicach A i B o różnych długosciach znajd wspolny podciąg
+In arrays A and B of different lengths find a common subsequence
 """
 """
-A - ciag rozmiaru n
-B - ciag rozmiaru m
+A - array size of n
+B - array size of m
 
-f(i, j) - najdluzszy wspolny podciag ciagow A[1..i] oraz B[1..j]
+f(i, j) - the longest common subsequence of the strings A[1..i] and B[1..j]
 f(0, j) = 0
 f(i, 0) = 0
 f(i, j) = {
-              f(i - 1, j - 1) + 1, gdy A[i] == B[j],
-              max(f(i - 1, j), f(i, j - 1)), gdy A[i] != B[j],
-              0, gdy i == 0 lub j == 0
+              f(i - 1, j - 1) + 1, when A[i] == B[j],
+              max(f(i - 1, j), f(i, j - 1)), when A[i] != B[j],
+              0, when i == 0 lub j == 0
 }
 O(n*m)
 """

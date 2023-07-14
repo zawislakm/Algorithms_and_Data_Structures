@@ -5,11 +5,11 @@ zawiera dobry początek.
 """
 
 """
-Odpalany jest noramlny DFS, z zapamietywaniem czasu przetowrzenia. Resetowana jest tablica visited. 
-Idzie sie po tablicy z czasmi. Gdy trafi sie na czas przetowrzenie rowny ilosc wierchołków, odpala sie tylko
-i wylacznie dla tego wierzcholka DFS. Jezeli wszystkie wartosci w tablicy visited sa true to wierzcholek jest
-dobrym poczatkiem
+Normal DFS, with memorization of processing time. 
+Than visited array is reset. Find vertex where processing time is equal to amount of vertices. Run DFS only from this
+vertex. Check whether is possible to reach all other vertices
 """
+
 
 import math
 

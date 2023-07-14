@@ -4,8 +4,7 @@ Driver change in each city. Alice plans the path and pick who drive first. Algor
 and who drive first
 """
 """
-Trzeba odpalic dwa razy dijkestre, raz gdy startuje Alice raz gdy Bob, odpowienie warunki przy relaxowniu.
-
+Dijkstra twice, once when Alice starts once when Bob starts, the right conditions when relaxing.
 """
 
 from math import inf

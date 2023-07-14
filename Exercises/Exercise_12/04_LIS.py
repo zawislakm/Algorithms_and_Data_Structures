@@ -1,11 +1,10 @@
-# Proszę rozwiązać dwa następujące zadania:
-#     1. Jak wykorzystać algorytm dla problemu najdłuższego wspólnego podciągu do rozwiązania zadania
-# najdłuższego rosnącego podciągu?
-#     2. Na wykładzie podaliśmy algorytm działający w czasie O(n**2). Proszę podać algorytm
-# o złożoności O(n*log(n)).
-# Znajdź długość najdłuższego podciągu rosnącego A[n]:
-#    1) wykorzystuje LCS
-#    2) ma złożoność O(n*log(n))
+"""
+LIS in nlogn
+"""
+
+"""
+Using binsec
+"""
 
 
 def binary_search(A, i, j, k):

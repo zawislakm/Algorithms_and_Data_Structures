@@ -1,16 +1,11 @@
 """
-mamy tablice A wypelniona liczbami naturalnymi, mamy liczbe T i musimy
-sprawdzic czy z elementow tablicy A
-da sie stworzyc taki podciąg elementow z A zeby ich suma dala T
-"""
-
-"""
-
+Given array A with number and given number T. Check whether it is possible to find
+subsequence in A with sum equal to T
 """
 
 
 def sub_sum(A: list, T: int) -> bool:
-    A = list(filter(lambda x:x < T,A))
+    A = list(filter(lambda x: x < T, A))
     print(A)
     n = len(A)
     DP = [[False for _ in range(T + 1)] for _ in range(n + 1)]
@@ -32,5 +27,5 @@ def sub_sum(A: list, T: int) -> bool:
 
 
 T = 8
-A = [1, 2, 7, 4, 3, 3,10]
+A = [1, 2, 7, 4, 3, 3, 10]
 print(sub_sum(A, T))

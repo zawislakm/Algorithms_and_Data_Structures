@@ -1,16 +1,17 @@
 """
-Minamlny koszt przejsca z lewego gorneego rogu szachownicy do prawego dolnego rogu
+Minimal cost of moving from the upper left corner of the chessboard to the lower right corner
 """
 
 """
-f(i,j) = mininlanu koszt dotarcia na pole (i,j)
+f(i,j) = minimal cost of reaching position (i,j)
 f(i,j) = C[i][j] + min(f(i-1,j),f(i,j-1)
 
-pamieteac o warunkach brzegowych, 
-i <0 lub j <0
-retrun INF
+remembering the boundary conditions, 
+i <0 or j <0
+return INF
 
-i oraz j to wspolrzedne pola"""
+i and j are field coordinates
+"""
 
 from math import inf
 

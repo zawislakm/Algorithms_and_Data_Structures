@@ -1,12 +1,13 @@
 """
-Łączenie odcinków
-Dwa odcinki wolno połączyć jeżeli maja dokladnie jeden punkt przeciecia, np (1,4) oraz (4,5).
+Connect segments
+Two segments are allowed to connect if they have exactly one point of intersection,
+such as (1,4) and (4,5).
 
 Several versions of the task:
 1. whether it is possible to obtain the segment [a,b] (passed) by concatenating some of the segments
 2. as above, but using only k segments
 3. as above, but each segment has a positive price and minimize the sum of the prices of the glued segments
-4) Calculate what is the longest segment that can be obtained by gluing at most k segments.
+4. Calculate what is the longest segment that can be obtained by gluing at most k segments.
 """
 
 """

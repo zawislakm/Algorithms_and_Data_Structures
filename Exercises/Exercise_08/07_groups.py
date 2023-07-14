@@ -7,7 +7,7 @@
 # dostali się z A do B.
 
 """
-Zmodyfikowana dijkstra, zapamietujaca maksymalna wage krawedzi jaka do niej przyszla
+Modified dijkstra, remembering the maximum weight of the edge that came to it
 """
 
 import math
