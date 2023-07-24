@@ -4,8 +4,6 @@ from egz1Atesty import runtests
 import queue
 
 """
-#Maksymilian Zawislak 410609
-
 Z kazdego zamku zaczyna wychodzic nowa krawedz o koszcie przejscia po zarabowaniu zamku + r
 
 Dijkstra pamieta czy juz rabowała zamek czy nie.

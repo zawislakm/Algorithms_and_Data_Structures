@@ -3,8 +3,6 @@ import math
 from egz1btesty import runtests
 
 """
-#Maksymilian Zawislak 410609
-
 Tablica dynamic rozmiaru (nE) zawiera minmalny koszt dojazdu do danej planety zawierajac jeszcze b paliwa.
 
 Wypleniania jest pokoleji, napierw jest dodanie teleportu z kosztu dojazdu zerowego
